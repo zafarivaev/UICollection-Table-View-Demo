@@ -58,7 +58,7 @@ extension CollectionViewController {
                                            bottom: 0,
                                            right: 10)
         layout.scrollDirection = .vertical
-        layout.minimumInteritemSpacing = 10
+        layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         layout.itemSize = CGSize(width: cellWidthHeightConstant, height: cellWidthHeightConstant)
         
