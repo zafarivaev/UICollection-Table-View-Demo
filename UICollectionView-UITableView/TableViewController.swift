@@ -34,7 +34,9 @@ class TableViewController: UIViewController {
 // MARK: - UI Setup
 extension TableViewController {
     private func setupUI() {
-        overrideUserInterfaceStyle = .light
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
         self.view.backgroundColor = .white
         
         self.view.addSubview(tableView)

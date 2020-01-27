@@ -34,7 +34,9 @@ class CollectionViewController: UIViewController {
 // MARK: - UI Setup
 extension CollectionViewController {
     private func setupUI() {
-        overrideUserInterfaceStyle = .light
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
         self.view.backgroundColor = .white
         
         self.view.addSubview(collectionView)
