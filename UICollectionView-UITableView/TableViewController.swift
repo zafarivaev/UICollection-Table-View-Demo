@@ -28,7 +28,6 @@ class TableViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
-    
 }
 
 // MARK: - UI Setup
